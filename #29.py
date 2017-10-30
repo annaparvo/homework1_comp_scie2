@@ -1,0 +1,8 @@
+a = raw_input()
+b = set(map(int,raw_input().split()))
+c = raw_input()
+d = set(map(int,raw_input().split()))
+one = list(b.difference(d))
+two = list(d.difference(b))
+g = sorted(one+two)
+print("\n".join(map(str, g)))
